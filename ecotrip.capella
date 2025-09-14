@@ -50,6 +50,8 @@
           id="97318ccb-1cfa-45b4-ad96-125a706e4ed1" name="Operational Capabilities">
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="344e84ca-651e-4704-8679-51822ff074c6" name="Plan Trip" description="&lt;p>Contraintes: bugdets, temps, nombre de personnes, m&amp;eacute;t&amp;eacute;o, ...&lt;/p>&#xA;&#xA;&lt;p>Pr&amp;eacute;f&amp;eacute;rences: culturel, gastronomique, farniente, sportif, paysages, air pur&lt;/p>&#xA;&#xA;&lt;p>Social: avis&lt;/p>&#xA;&#xA;&lt;p>&amp;Eacute;v&amp;eacute;n&amp;eacute;nements: f&amp;ecirc;tes, jours f&amp;eacute;ri&amp;eacute;s, manifestations, ...&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="7f52dd88-96a6-45e2-9059-623a00875aa0" included="#0ec3cb3a-f7ec-41bb-94f3-b8493202dcab"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="97e8f3f4-5c62-442c-bf20-57a1e234aad8" involved="#15318cb3-c49b-48c0-b2c5-c6a0c0d1b246"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
@@ -64,7 +66,11 @@
             id="0ac00101-b74b-42ef-92da-2b272ab5aa92" name="Guide in real-time" description="&lt;p>&amp;nbsp;Prendre en consid&amp;eacute;ration la m&amp;eacute;t&amp;eacute;o, les &amp;eacute;v&amp;eacute;nements, ...&lt;/p>&#xA;&#xA;&lt;p>Suggestion en fonction des &amp;eacute;v&amp;eacute;nements du jour&lt;/p>&#xA;&#xA;&lt;p>Synth&amp;egrave;se vocal pour donner des explications&lt;/p>&#xA;">
           <extends xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityExtend"
               id="848b5247-d95c-42b1-b3a2-52d1f62019fb" extended="#344e84ca-651e-4704-8679-51822ff074c6"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="46c0b652-6ce4-4fdc-8ac7-5d811658e501" included="#0ec3cb3a-f7ec-41bb-94f3-b8493202dcab"/>
         </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="0ec3cb3a-f7ec-41bb-94f3-b8493202dcab" name="Gérer les préférences"/>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="339e8e10-d66e-43de-bff0-dd59e0170c6a" name="Interfaces"/>
